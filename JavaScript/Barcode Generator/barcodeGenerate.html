@@ -9,10 +9,14 @@
 <body>
     <h1>Generate Barcode</h1>
     <p>Enter Barcode Value : <input type="text" id="txt-input">
-    <button>Submit</button></p>
+    <button id="btn-generate">Submit</button></p>
     <svg id="barcode"></svg>
     <script>
-    JsBarcode("#barcode", "Hi world!");
+        document.getElementById("btn-generate").addEventListener('click', function() {
+            let val =document.getElementById("txt-input").value;
+            JsBarcode("#barcode", val);
+        })
+    
     </script>
 </body>
 </html>
