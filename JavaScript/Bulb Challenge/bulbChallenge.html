@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Light Bulb Challenge</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #91401d, #f1e2e2);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            color: #ffffff;
+        }
+
+        button {
+            background-color: #ffffff;
+            color: #ff5e62;
+            padding: 15px 30px;
+            margin: 15px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            background-color: #f8e8e8;
+            color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>The Light Bulb Challenge</h1>
+    <p>Press "Turn On" to light up the bulb and "Turn Off" to switch off the bulb.</p>
+    <button onclick="document.getElementById('bulb').src='images/pic_bulbon.gif'">Turn On</button>
+    <img src="images/pic_bulboff.gif" id="bulb">
+    <button onclick="document.getElementById('bulb').src='images/pic_bulboff.gif'">Turn Off</button>
+</body>
+</html>

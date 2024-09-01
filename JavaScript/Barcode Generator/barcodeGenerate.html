@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JsBarcode.all.min.js"></script>
+    <title>Generate Barcode</title>
+</head>
+<body>
+    <h1>Generate Barcode</h1>
+    <p>Enter Barcode Value : <input type="text" id="txt-input">
+    <button>Submit</button></p>
+    <svg id="barcode"></svg>
+    <script>
+    JsBarcode("#barcode", "Hi world!");
+    </script>
+</body>
+</html>
